@@ -317,3 +317,37 @@ header .fa-bars {
         display: none;
     }
 }
+.template-selection {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.templates {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.template {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.template:hover {
+  border-color: #007bff;
+}
+
+.template img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.selected-template-preview {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
