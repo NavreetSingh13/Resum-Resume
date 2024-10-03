@@ -94,6 +94,41 @@
         font-size: 16px;
       }
 
+      /* Template Section*/
+      .template-selection {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.templates {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.template {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.template:hover {
+  border-color: #007bff;
+}
+
+.template img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.selected-template-preview {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
       /* Testimonials Section */
       .testimonials {
         padding: 60px 20px;
@@ -321,6 +356,30 @@
     </section>
 
     <!-- home section ends-->
+
+    <!-- Template Selection Section -->
+  <section class="template-selection">
+    <h3>Select a Template</h3>
+    <div class="templates">
+      <div class="template" onclick="selectTemplate('template1')">
+        <img src="assets/template1.jpg" alt="Template 1" />
+        <p>Template 1</p>
+      </div>
+      <div class="template" onclick="selectTemplate('template2')">
+        <img src="assets/template2.jpg" alt="Template 2" />
+        <p>Template 2</p>
+      </div>
+      <div class="template" onclick="selectTemplate('template3')">
+        <img src="assets/template3.jpg" alt="Template 3" />
+        <p>Template 3</p>
+      </div>
+    </div>
+    <div class="selected-template-preview">
+      <h4>Selected Template Preview</h4>
+      <div id="previewContent"></div>
+    </div>
+  </section>
+  <!-- Template section ends -->
 
     <!-- Features Section -->
     <section class="features">
