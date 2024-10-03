@@ -81,3 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+function selectTemplate(templateName) {
+  const previewContent = document.getElementById('previewContent');
+  
+  // Update the preview content based on the selected template
+  switch (templateName) {
+    case 'template1':
+      previewContent.innerHTML = '<h2>Template 1 Preview</h2><p>Your content will go here.</p>';
+      break;
+    case 'template2':
+      previewContent.innerHTML = '<h2>Template 2 Preview</h2><p>Your content will go here.</p>';
+      break;
+    case 'template3':
+      previewContent.innerHTML = '<h2>Template 3 Preview</h2><p>Your content will go here.</p>';
+      break;
+    // Add more cases as needed
+    default:
+      previewContent.innerHTML = '<p>Please select a template.</p>';
+  }
+}
